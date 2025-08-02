@@ -1,0 +1,276 @@
+
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f4f4f9;
+  color: #222;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+a:hover {
+  color: #005999;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: #ffffff;
+  text-align: center;
+  padding: 100px 20px 60px;
+  border-bottom: 2px solid #e0e0e0;
+}
+.welcome-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 35px;
+}
+.icon-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.icon-links a img {
+  width: 30px;
+  transition: transform 0.2s;
+}
+.icon-links a:hover img {
+  transform: scale(1.1);
+}
+
+/* Home Section */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  background: #fafbfc;
+}
+.intro-text h1 {
+  font-size: 2.2rem;
+}
+.name {
+  color: #0077cc;
+}
+.intro-text h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #777;
+}
+.intro-text p {
+  max-width: 600px;
+  margin-top: 20px;
+  color: #333;
+}
+.buttons {
+  margin-top: 25px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 8px;
+  background: #0077cc;
+  color: white;
+  border-radius: 6px;
+}
+.btn:hover {
+  background: #005fa3;
+}
+.profile-pic {
+  margin: 30px 0;
+}
+.profile-pic img {
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* What I Do */
+.what-i-do {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+.what-i-do h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 260px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #0077cc;
+}
+.card-icon {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about-container {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about-text p {
+  margin-bottom: 14px;
+  color: #444;
+}
+.about-text h3 {
+  margin-top: 20px;
+}
+.about-text ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+.about-image img {
+  width: 240px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* Education & Experience */
+.edu-exp-section {
+  background: #f1f5f9;
+  padding: 60px 20px;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+.timeline-column {
+  flex: 1;
+  min-width: 300px;
+}
+.column-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+.timeline {
+  list-style: none;
+}
+.timeline li {
+  background: white;
+  border-left: 3px solid #0077cc;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.timeline h4 {
+  font-size: 1.1rem;
+}
+.timeline .date {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+.projects-section .section-title {
+  text-align: center;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.project-card {
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+.project-card:hover {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.project-card h3 {
+  margin-bottom: 10px;
+}
+.project-card p {
+  margin-bottom: 10px;
+  color: #444;
+}
+.project-card a {
+  font-weight: bold;
+  color: #0077cc;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #f8fafc;
+  padding: 60px 20px;
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.contact-section p {
+  margin-bottom: 20px;
+  color: #444;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-links a {
+  color: #0077cc;
+  font-weight: 500;
+}
+.contact-links a:hover {
+  text-decoration: underline;
+}
